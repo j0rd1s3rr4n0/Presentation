@@ -1,0 +1,373 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+<title>Jordi Serrano</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
+
+
+body {
+  font-family: 'Hind';
+	height: 100%;
+}
+
+container {
+	display: block;
+}
+
+/* Beginning of navigation styling */
+
+.navbar {
+  background: #123857;
+  padding: 25px;
+  font-size: 1.8rem;
+	border-width: 0;
+}
+
+
+.navbar-header.page-scroll a {
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+.navbar-header.page-scroll a:hover {
+  color: #ee2f72;
+}
+
+.nav.navbar-nav.navbar-right a {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.nav.navbar-nav.navbar-right a:hover {
+  color: #ee2f72;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: #123857;
+}
+
+.navbar-default .navbar-toggle.collapse .navbar-collapse.collapse {
+  background-color: #123857;
+}
+
+/* End of Navigation Style */
+
+/*Beginning of header styling*/
+#myBio {
+	text-align: center;
+  top: 200px;
+}
+
+.img-responsive {
+	height: 250px;
+	width: 250px;
+	position: relative;
+  left: 50%;
+	overflow: hidden;
+  margin-left: -125px
+}
+
+
+.list-inline li a{
+	color: #123857;
+	margin-right: 15px;
+}
+
+.list-inline li a:hover {
+	color: #ee2f72;
+}
+
+.fa.fa-3x.fa-angle-double-down {
+	color: #123857;
+	margin-top: 20px;
+}
+
+.fa.fa-3x.fa-angle-double-down:hover {
+	color: #ee2f72;
+}
+
+.intro-text h4 {
+	color: #ee2f72;
+	font-size: 1.75rem;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.intro-text h1 {
+	letter-spacing: 10px;
+	font-size: 5rem;
+  margin-top: 30px;
+}
+
+/*end of header styling*/
+
+/*beginning of about me styling*/
+
+#aboutme { 
+	height: 110vh;
+	padding-top: 50px;
+	text-align: center;
+	background: #f7f7f7;
+	position: relative;
+	top: 300px;
+}
+
+#aboutme h2 {
+	letter-spacing: 12px;
+	font-size: 3em;
+	margin-bottom: 200px;
+	margin-top: 100px;
+}
+
+#aboutme h3 {
+	line-height: 40px;
+	vertical-align: middle;
+}
+
+/*end of aboutme styling*/
+#portfolio { 
+	height: 110vh;
+	padding-top: 50px;
+	text-align: center;
+	background: white;
+	position: relative;
+	top: 300px;
+}
+
+#portfolio h2 {
+	letter-spacing: 12px;
+	font-size: 3em;
+	margin-bottom: 75px;
+	margin-top: 100px;
+}
+
+#portfolio .thumbnail {
+	border-color: #123857;
+	padding: 0px;
+	min-height: 200px;
+	border-radius: 0;
+	margin-bottom: 40px;
+  overflow: hidden;
+}
+
+#portfolio .thumbnail:hover {
+	border-color: #ee2f72;
+}
+
+#portfolio .thumbnail img{
+	min-height: 200px;
+}
+
+/*end of portfolio styling */
+
+/*begnning of footer styling */
+
+footer {
+	margin-top: 100px;
+	background-color: #123857;
+	height: 130px;
+	color: white;
+	overflow: hidden;
+	position: relative;
+	}
+
+footer p {
+	vertical-align: center;
+	margin-top: 8%;
+	margin-bottom: 0px;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: #ee2f72;
+}
+
+
+    </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head><body translate="no" id="page-top" class="index">
+
+
+<title>Jordi Serrano</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet" type="text/css">
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+<div class="container">
+<div class="navbar-header page-scroll">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#header">𝔍𝔬𝔯𝔡𝔦 𝔖𝔢𝔯𝔯𝔞𝔫𝔬</a>
+</div>
+<div id="myNav" class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li class="hidden">
+<a href="#page-top"></a>
+</li>
+<li class="page-scroll">
+<a href="#aboutme">SOBRE MI</a>
+</li>
+<li class="page-scroll">
+<a href="#portfolio">MIS PROYECTOS</a>
+</li>
+<li class="page-scroll">
+</li>
+</ul>
+</div>
+</div>
+
+</nav>
+
+
+<header id="header">
+<div class="container">
+<div class="row">
+<div id="myBio" class="col-lg-12">
+<img class="img-responsive img-circle" src="https://i.imgur.com/DZNyau2.jpg" alt="Personal Photo">
+<div class="intro-text">
+<h1 class="large h1 text-center">JORDI SERRANO</h1>
+<h4 class="subtitle">ESTUDIANTE AUTODIDACTA DE PROGRAMACIÓN</h4>
+<ul class="list-inline">
+<li>
+<a target="_blank" href="https://github.com/j0rd1s3rr4n0" title="Github"><i class="fa fa-3x fa-github-square"></i></a>
+</li>
+<li>
+<a target="_blank" href="https://www.instagram.com/jordi_serrano" title="Instagram"><i class="fa fa-instagram fa-3x"></i></a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/jordiiiserrano" title="Twitter"><i class="fa fa-3x fa-twitter-square"></i></a>
+</li>
+</ul>
+<p><a href="#aboutme"><i class="fa fa-3x fa-angle-double-down"></i></a></p>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+
+<section id="aboutme">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<h2 class="h2">SOBRE MI</h2>
+<h3>Soy un chico  de <u><b><a href="#aboutme">Calella</a></b></u></h3>
+<h3>Me gusta mucho la informática y estudio de manera autodidacta programación y ciberseguridad.<u></br><a href="https://jordiserrano.000webhostapp.com/ex_index.html">jordiserrano.tk</a></u></br><u><a href="https://jordiserrano.000webhostapp.com/ex_index.html">https://jordiserrano.tk/page2</a></u></h3> 
+</div>
+</div>
+</div>
+</section>
+
+
+<div>
+<section id="portfolio">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<h2 class="h2">MIS PROYECTOS</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6 col-md-3">
+<a id="thumbnail1" href="https://jordiserrano.000webhostapp.com/Games/Snake2D/" class="thumbnail">
+<img src="https://i.imgur.com/HGMn9EA.png" alt="Project 1 image">
+<b><center>SNAKE 2D Project BETA ( ORDENADOR )</center></b>
+</a>
+</div>
+<div class="col-sm-6 col-md-3">
+<a href="#" class="thumbnail">
+<img src="https://i.imgur.com/60SAy13.jpg" alt="Generic placeholder thumbnail">
+<b><center>PACMAN DE PLATAFORMAS ( ANDROID )</center></b>
+</a>
+</div>
+<div class="col-sm-6 col-md-3">
+<a href="https://jakarjk.selly.store/product/984e9823" class="thumbnail">
+<img src="https://i.imgur.com/dQvuhtZ.jpg" alt="Generic placeholder thumbnail">
+<b><center>Wifi Password Recover</center></b>
+</a>
+</div>
+<div class="col-sm-6 col-md-3">
+<a href="https://jakarjk.selly.store/product/2fe0a56c" class="thumbnail">
+<img src="https://i.imgur.com/TVe27qT.jpg" alt="Generic placeholder thumbnail">
+<b><center>Wifi Password Recover PRO </center></b>
+</a>
+</div>
+<div class="col-sm-6 col-md-3">
+<a href="https://jakarjk.selly.store/category/f817a268" class="thumbnail">
+<img src="https://i.imgur.com/Eq0lYj5.jpg" alt="Generic placeholder thumbnail">
+<b><center>WPR Installer</center></b>
+</a>
+</div>
+<div class="col-sm-6 col-md-3">
+<a href="https://rinconpirata.com" class="thumbnail">
+<img src="https://i.imgur.com/28eqA22.png" alt="Generic placeholder thumbnail">
+<b><center>APP Rincón Pirata ( FORO )</center></b>
+</a>
+</div>
+<div class="col-sm-6 col-md-3">
+<a href="https://www.zackops.com" class="thumbnail">
+<img src="https://i.imgur.com/MFrscYb.jpg" alt="Generic placeholder thumbnail">
+<b><center>ZACKOPS.COM ( RED SOCIAL )</center></b>
+</a>
+</div>
+<div class="col-sm-6 col-md-3">
+<a href="#" class="thumbnail">
+<img src="https://i.imgur.com/VuljIx6.png" alt="Generic placeholder thumbnail">
+<b><center> NO PROJECT FOUND </center></b>
+</a>
+</div>
+</div>
+</div>
+<footer class="text-center">
+<div class="container-fluid">
+<div class="row">
+<div class="col col-md-6">
+<p id="copyright">Copyright © Made by Jordi Serrano, 2019
+</p><p>
+</p></div>
+<div id="locemail" class="col col-md-6">
+<p><strong><i class="btn-social fa fa-map-marker"></i> Calella, Catalunya</strong></p>
+<strong><i class="btn-social fa fa-envelope-o"></i> <a href="#" class="light-color">jordiserrano@protonmail.ch</a></strong>
+</div>
+</div>
+</div>
+</footer>
+</section>
+
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+
+</div></body></html>
