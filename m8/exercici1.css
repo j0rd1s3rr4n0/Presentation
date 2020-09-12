@@ -1,0 +1,36 @@
+.titol{
+    font-size:24pt;
+    text-transform: uppercase;
+    background-color:grey;
+    font-weight: bold;
+
+}
+.estilnegreta{
+    color:black;
+    font-weight: bold;
+}
+.estilcurisva{
+    color: red;
+    font-style: italic;
+}
+.estilsubratllada{
+    color: green;
+    text-decoration: underline
+}
+.estiltotmajuscules{
+    color:blue;
+    text-transform: uppercase;
+}
+.estilversaletes{
+    color:black;
+    font-variant: small-caps;
+}
+.estilsobreratllada{
+    color:red;
+    text-decoration: overline;
+}
+.estilverdana14tatxada{
+    color:blue;
+    font-size: 14pt;
+    text-decoration: line-through;
+}

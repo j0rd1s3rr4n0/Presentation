@@ -1,0 +1,21 @@
+.estilnom{
+    font-family:'Comic Sans MS';
+    font-weight: bolder;
+    letter-spacing:10pt;
+    font-size:25pt;
+    color:#0efeaf;
+    text-transform:capitalize;
+    background-color:#ff00ff
+}
+.estilcognom{
+    font-family:'Impact';
+    font-style: italic;
+    font-style: unset;
+    font-weight: lighter;
+    letter-spacing:5pt;
+    font-size:30pt;
+    color:#fffff;
+    text-transform:capitalize;
+    background-color:#ff00ff;
+
+}

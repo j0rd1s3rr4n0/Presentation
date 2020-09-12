@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jordi Serrano Bieto Pràctica1 Exercici1</title>
+		<link rel="stylesheet" type="text/css" href="SerranoJordiPrac1Ex1.css">
+	</head>
+	<body>
+		<a>La <font class="WWW">World Wide Web</font> es la culminación del <font class="HPY">hipertexto</font> y,como tal,sus orígenes se remontan a la propia historia del<br/>hipertexto. Quince años despues de que <font class="TN">TED NELSON</font>, en <font class="year">1965</font> imaginara las máquinas literarias que permitirían a usuarios de<br/>Nelson. <font class="TBL">Tim Berners-Lee</font>, en sus ratos libres,<font class="LOP"> investigaba un sistema de defunción descentralizada de información basado en<br/> el hipertexto en el que cooperaban una red de centros de investigacion.</font></a>
+	</body>
+</html>
+
+<!--
+  _______       _           _ _   _____            _ _ _            _     _____                 _               _ _    _____                                 
+ |__   __|     | |         | | | |  __ \          | (_) |          | |   |  __ \               | |             | (_)  / ____|                                
+    | |_ __ ___| |__   __ _| | | | |__) |___  __ _| |_| |_ ______ _| |_  | |__) |__ _ __       | | ___  _ __ __| |_  | (___   ___ _ __ _ __ __ _ _ __   ___  
+    | | '__/ _ \ '_ \ / _` | | | |  _  // _ \/ _` | | | __|_  / _` | __| |  ___/ _ \ '__|  _   | |/ _ \| '__/ _` | |  \___ \ / _ \ '__| '__/ _` | '_ \ / _ \ 
+    | | | |  __/ |_) | (_| | | | | | \ \  __/ (_| | | | |_ / / (_| | |_  | |  |  __/ |    | |__| | (_) | | | (_| | |  ____) |  __/ |  | | | (_| | | | | (_) |
+    |_|_|  \___|_.__/ \__,_|_|_| |_|  \_\___|\__,_|_|_|\__/___\__,_|\__| |_|   \___|_|     \____/ \___/|_|  \__,_|_| |_____/ \___|_|  |_|  \__,_|_| |_|\___/ 
+                                                                                                                                                             
+                                                                                                                                                             
+-->

@@ -1,0 +1,72 @@
+/* Exercici 4 CSS 
+
+  _______       _           _ _   _____            _ _ _            _     _____                 _               _ _    _____                                 
+ |__   __|     | |         | | | |  __ \          | (_) |          | |   |  __ \               | |             | (_)  / ____|                                
+    | |_ __ ___| |__   __ _| | | | |__) |___  __ _| |_| |_ ______ _| |_  | |__) |__ _ __       | | ___  _ __ __| |_  | (___   ___ _ __ _ __ __ _ _ __   ___  
+    | | '__/ _ \ '_ \ / _` | | | |  _  // _ \/ _` | | | __|_  / _` | __| |  ___/ _ \ '__|  _   | |/ _ \| '__/ _` | |  \___ \ / _ \ '__| '__/ _` | '_ \ / _ \ 
+    | | | |  __/ |_) | (_| | | | | | \ \  __/ (_| | | | |_ / / (_| | |_  | |  |  __/ |    | |__| | (_) | | | (_| | |  ____) |  __/ |  | | | (_| | | | | (_) |
+    |_|_|  \___|_.__/ \__,_|_|_| |_|  \_\___|\__,_|_|_|\__/___\__,_|\__| |_|   \___|_|     \____/ \___/|_|  \__,_|_| |_____/ \___|_|  |_|  \__,_|_| |_|\___/ 
+                                                                                                                                                             
+      
+
+*/
+
+a{
+	font-family: "Palatino Linotype";
+	font-size: 14pt;
+	font-variant: small-caps;
+}
+.subgft{
+	color:lightgreen;
+	border:yellowgreen thin double;
+	background-color: darkgreen;
+}
+.sinzill{
+	color:salmon;
+	text-decoration: line-through;
+}
+.naviga_mid_a{
+	font-size:14pt;
+}
+.naviga_mid_b{
+	font-size:15pt;
+}
+.naviga_mid_c{
+	font-size:16pt;
+}
+.naviga_mid_d{
+	font-size:17pt;
+}
+.naviga_mid_e{
+	font-size:18pt;
+}
+.naviga_mid_f{
+	font-size:19pt;
+}
+.naviga_mid_g{
+	font-size:20pt;
+}
+.naviga_mid_h{
+	font-size:21pt;
+}
+.naviga_mid_i{
+	font-size:22pt;
+}
+.naviga_mid_j{
+	font-size:23pt;
+}
+.naviga_mid_k{
+	font-size:24pt;
+}
+.naviga_mid_l{
+	font-size:25pt;
+}
+.negit{
+	font-style: italic;
+	font-family: "Arial Back";
+	font-variant: normal;
+}
+.suby{
+	background-color: yellow;
+	font-variant: normal;
+}

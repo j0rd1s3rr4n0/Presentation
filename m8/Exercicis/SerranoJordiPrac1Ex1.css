@@ -1,0 +1,49 @@
+/* Exercici 1 CSS 
+
+  _______       _           _ _   _____            _ _ _            _     _____                 _               _ _    _____                                 
+ |__   __|     | |         | | | |  __ \          | (_) |          | |   |  __ \               | |             | (_)  / ____|                                
+    | |_ __ ___| |__   __ _| | | | |__) |___  __ _| |_| |_ ______ _| |_  | |__) |__ _ __       | | ___  _ __ __| |_  | (___   ___ _ __ _ __ __ _ _ __   ___  
+    | | '__/ _ \ '_ \ / _` | | | |  _  // _ \/ _` | | | __|_  / _` | __| |  ___/ _ \ '__|  _   | |/ _ \| '__/ _` | |  \___ \ / _ \ '__| '__/ _` | '_ \ / _ \ 
+    | | | |  __/ |_) | (_| | | | | | \ \  __/ (_| | | | |_ / / (_| | |_  | |  |  __/ |    | |__| | (_) | | | (_| | |  ____) |  __/ |  | | | (_| | | | | (_) |
+    |_|_|  \___|_.__/ \__,_|_|_| |_|  \_\___|\__,_|_|_|\__/___\__,_|\__| |_|   \___|_|     \____/ \___/|_|  \__,_|_| |_____/ \___|_|  |_|  \__,_|_| |_|\___/ 
+                                                                                                                                                             
+      
+
+*/
+a{
+	text-align : justify;
+	font-size:18pt;
+}
+.WWW{
+	font-family: Bookman Old Style;
+	font-weight: bold;
+	text-decoration: underline;
+	color:blue;
+	
+}
+.HPY{
+	color:#E5097F;
+	font-family: Bradley Hand ITC;
+	letter-spacing: 6;
+	
+}
+.TN{
+	color:blueviolet;
+	font-family: ALGERIAN;
+	
+}
+.year{
+	font-size: 24pt;
+}
+.TBL{
+	border:#F28773 medium solid;
+	color:#F28773;
+	background-color:#cacaca;
+	font-size:24pt;
+}
+.LOP{
+	color:green;
+	font-style: italic;
+	font-variant: small-caps;
+	font-family:Batang;
+}

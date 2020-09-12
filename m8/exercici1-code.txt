@@ -1,0 +1,18 @@
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Exemple de Lletra</title>
+        <link rel="stylesheet" type="text/css" href="exercici1.css">
+
+    </head>
+    <body>
+        <font class="titol"> PRIMERA PAGINA</font><br/>
+        Jo estic en <font class="estilnegreta">negreta</font><br/>
+        Jo estic en <font class="estilcursiva">cursiva</font><br/>
+        <font class="estilsubratllada">Jo estic subratllada</font><br/>
+        <font class="estiltotmajúscules">JO ESTIC EN MAJÚSCULES</font><br/>
+        <font class="estilversaletes">  Jo estic en Versaletes</font><br/>
+        <font class="estilsobreratllada">Jo estic sobreratllada</font><br/>
+        <font class="estilverdana14tatxada">Jo estic en Verdana,mida 14 i tatxada</font><br/>
+    </body>
+</html>

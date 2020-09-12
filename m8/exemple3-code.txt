@@ -1,0 +1,12 @@
+<doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemple3</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> <!-- Afageix document .css en el document .html-->
+    </head>
+    <body>
+        <font class="estilnom">Jordi</font> <font class="estilcognom">Serrano</font>
+    </body>
+    </body>
+</html>

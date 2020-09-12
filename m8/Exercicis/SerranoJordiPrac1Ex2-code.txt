@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Jordi Serrano Bieto Pràctica1 Exercici2</title>
+		<link rel="stylesheet" type="text/css" href="SerranoJordiPrac1Ex2.css">
+	</head>
+	<body>
+		<a>Los orígenes de <font class="aprg">Apple</font> se remontan al <font class="num">1976</font> cuando <font class="spj">Steven P.Jobs</font> y <br/><font class="sgw">Stephen G.Wozniac</font> instalaron un taller en el garaje de la casa del padre<br/>de Jobs en <font class="cup">Cupertino</font>,California. Jobs vendio su van Volkswagen<br/>y Wozniak vendio su calculador programable para financiar la <br/>fabricacion de los primeros 50 circuitos del ordenador <font class="appy">Apple I</font>.</a>
+	</body>
+</html>
+<!--
+  _______       _           _ _   _____            _ _ _            _     _____                 _               _ _    _____                                 
+ |__   __|     | |         | | | |  __ \          | (_) |          | |   |  __ \               | |             | (_)  / ____|                                
+    | |_ __ ___| |__   __ _| | | | |__) |___  __ _| |_| |_ ______ _| |_  | |__) |__ _ __       | | ___  _ __ __| |_  | (___   ___ _ __ _ __ __ _ _ __   ___  
+    | | '__/ _ \ '_ \ / _` | | | |  _  // _ \/ _` | | | __|_  / _` | __| |  ___/ _ \ '__|  _   | |/ _ \| '__/ _` | |  \___ \ / _ \ '__| '__/ _` | '_ \ / _ \ 
+    | | | |  __/ |_) | (_| | | | | | \ \  __/ (_| | | | |_ / / (_| | |_  | |  |  __/ |    | |__| | (_) | | | (_| | |  ____) |  __/ |  | | | (_| | | | | (_) |
+    |_|_|  \___|_.__/ \__,_|_|_| |_|  \_\___|\__,_|_|_|\__/___\__,_|\__| |_|   \___|_|     \____/ \___/|_|  \__,_|_| |_____/ \___|_|  |_|  \__,_|_| |_|\___/ 
+                                                                                                                                                             
+                                                                                                                                                             
+-->

@@ -1,0 +1,213 @@
+
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+<title>FRETA Calella - Clickedu. Programa de gestió escolar > Iniciar sessió</title>
+<meta name="description" content="Gestió centre, Famílies, EVA, LMS i gestió del professorat, qualitat i excel·lència, comunicacions, compatible amb Android, iPad i dispositius mòbils">
+<meta http-equiv="content-language" content="" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116303583-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116303583-1');
+</script><!-- shortcut icon -->
+<link rel="shortcut icon" type="image/x-icon" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/favicon.ico" />
+<!-- apple touch icon -->
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/apple-touch-icon-120x120-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/apple-touch-icon-76x76-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://fretacalella.clickedu.eu/img/favicon/clickedu/apple-touch-icon-precomposed.png">
+
+<!-- styles -->
+<link rel="stylesheet" type="text/css" href="https://static1.clickedu.eu/css/estils_login.css?v=20180702_112930" media="screen">
+
+
+<!-- INI jQuery -->
+<script type="text/javascript" src="https://static1.clickedu.eu/js/jquery/jquery-1.7.1.min.js?v=20150828_100221"></script>
+<!-- FI jQuery -->
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('[name=username], [name=correu]').blur(function() {
+		if($('#hidden_tipus_user').val() == 'ind_alu') {
+			if ($('#div_radio_tipus_user input[type=radio]:checked').length && $('[name=username]').val() != '' && $('[name=correu]').val() != '' && $('#hidden_error_correu').val() == 0 && $( '#checkbox_confirm_user' ).attr('checked')){
+				$('#enviar_frm').removeClass( 'boto_blanc_deshabilitat' ).addClass( 'boto_gris' );
+			}else{
+				$('#enviar_frm').removeClass( 'boto_gris' ).addClass( 'boto_blanc_deshabilitat' );
+			}
+		}else{
+			if ($('[name=username]').val() != '' && $('[name=correu]').val() != '' && $('#hidden_error_correu').val() == 0 && $( '#checkbox_confirm_user' ).attr('checked')){
+				$('#enviar_frm').removeClass( 'boto_blanc_deshabilitat' ).addClass( 'boto_gris' );
+			}else{
+				$('#enviar_frm').removeClass( 'boto_gris' ).addClass( 'boto_blanc_deshabilitat' );
+			}
+		}
+	});
+
+	$( '#checkbox_confirm_user, #div_radio_tipus_user input[type=radio]' ).click(function() {
+		if($('#hidden_tipus_user').val() == 'ind_alu') {
+			if ($('#div_radio_tipus_user input[type=radio]:checked').length && $('[name=username]').val() != '' && $('[name=correu]').val() != '' && $('#hidden_error_correu').val() == 0 && $( '#checkbox_confirm_user' ).attr('checked')){
+				$('#enviar_frm').removeClass( 'boto_blanc_deshabilitat' ).addClass( 'boto_gris' );
+			}else{
+				$('#enviar_frm').removeClass( 'boto_gris' ).addClass( 'boto_blanc_deshabilitat' );
+			}
+		}else{
+			if ($('[name=username]').val() != '' && $('[name=correu]').val() != '' && $('#hidden_error_correu').val() == 0 && $( '#checkbox_confirm_user' ).attr('checked')){
+				$('#enviar_frm').removeClass( 'boto_blanc_deshabilitat' ).addClass( 'boto_gris' );
+			}else{
+				$('#enviar_frm').removeClass( 'boto_gris' ).addClass( 'boto_blanc_deshabilitat' );
+			}
+		}
+	});
+
+	$( "#enviar_frm" ).click(function() {
+		if ($( '#checkbox_confirm_user' ).attr( 'checked' )) {
+			err = 0;
+			if ($('[name=correu]').val() == $('[name=correu]').attr("value_inicial")) 		{ err++; }
+			if (err > 0)	{ alert( 'Comprova que tots els camps estiguin correctes.' ); }
+			else			{ $( "#frmRecordarLogin" ).submit(); }
+		}
+		else{
+			alert( 'Es necessari activar el checkbox.' );
+		}
+	});
+
+	$('[name=username]').change(function(event) {
+		$( '#checkbox_confirm_user' ).attr( 'checked', false );
+	});
+
+	$('[name=username]').focusout(function(){
+		var usr = $(this).val();
+				if(usr != ''){
+			$.ajax({
+				type: "POST",
+				url: "user.php",
+				data: { action: "ajax", ajax: "tipus_usr", usr: usr },
+				success: function(result) {
+					$( '#hidden_tipus_user' ).val(result);
+					if(result != 'ind_pas' && result != 'ind_pd' && result != '0'){
+						$( '#div_radio_tipus_user' ).show();
+					}else{
+						$( '#div_radio_tipus_user' ).hide();
+												$( '#div_radio_tipus_user' ).find('input').removeAttr('checked');
+					}
+				}
+			})
+		}else{
+						$("#div_radio_tipus_user").hide();
+		}
+	});
+
+	$('[name=correu]').focusout(function() {
+		var expresion	= /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		var correu		= $(this).val();
+		if (correu.match(expresion) || correu == '') {
+			$('#hidden_error_correu').val('0');
+			$( "#barra_error_correu" ).hide();
+		}else{
+			$('#hidden_error_correu').val('1');
+			$( "#barra_error_correu" ).show();
+		}
+	});
+
+	$(".popup-icon").each(function(i) {
+		icon_id = $(this).attr("id");
+		input_id = icon_id.replace("icon_","");
+		pos = $("#"+input_id).position();
+		t = Math.round(pos.top);
+		$(this).css("top",t+"px");
+	});
+
+	$(".input").each(function(i) {
+		$(this).focus(function(obj)	{ setfocus($(this).attr("id"),"51"); });
+		$(this).blur(function(obj)	{ setfocus($(this).attr("id"),"70"); });
+	});
+
+	
+});
+
+
+function confirmation() {
+	var answer = confirm("Aquesta acció enviarà un nou arxiu de pas a la teva adreça de correu electrònic, que invalidarà l\'anterior. Vols continuar?")
+	if (answer) {
+		$('#frmArxiuPas').attr('action', "user.php?action=crearArxiuPasMailIni");
+		$('#frmArxiuPas').submit();
+	}
+}
+
+function tornar(pantalla) {
+	window.location.href = pantalla;
+}
+
+function setfocus(input_id,left){
+	icon_id = "icon_"+input_id;
+	$("#"+icon_id).css("left",left+"px");
+}
+
+</script>
+
+</head>
+
+<body class="body_clickedu">
+<div id="wrapper">
+
+		<div class="login_box">
+			
+			<div class="user-icon popup-icon" id="icon_username"></div>
+			<div class="pass-icon popup-icon" id="icon_password"></div>
+			
+		</div>
+		<form action="login.php" id="frmLogin" name="frmLogin" method="post" class="login-form login-form-clickedu">
+			<div class="header_white">
+				<a href="#" target="_blank" class="logoEscolaLogin"><img src="https://fretacalella.clickedu.eu/private/fretacalella.clickedu.eu/img_escola/logotip_pantalla.gif" alt="FRETA Calella" title="FRETA Calella" id="logotip_escola" /></a>
+			</div>
+			<div class="header">
+				<h1>Iniciar sessio</h1>
+			</div>
+			<div class="content">
+				<div><input id="username" name="username" type="text" class="input username" value="Nom d'usuari" title="Nom d'usuari"
+			onfocus="if(this.value == 'Nom d\'usuari') { this.value = ''; }" placeholder="Nom d'usuari"/></div><div><input id="password" name="password" type="password" class="input password" title="Contrasenya" placeholder="Contrasenya"/></div><div class="register"><a href="user.php?action=recuperar_pas">Heu oblidat la contrasenya?</a></div>
+			<div class="trenca_float"><!-- --></div>
+				<div class="trenca_float"><!-- --></div>
+			</div>
+			<div class="footer">
+				<input type="submit" name="button" value="Inicia" class="button" /><div id="navbar">
+                <a href=".https://fretacalella.clickedu.eu/admin/login_google.php">
+                    <img src="https://fretacalella.clickedu.eu//img/login/btn_google_signin_light_normal_web.png">
+                </a></div>
+				<div class="trenca_float"><!-- --></div>
+			</div>
+		</form>
+		<div class="nota_legal">
+			<div class="PerSobre PerSota">
+                    <div class="div_link_app">
+                        <a href="https://play.google.com/store/apps/details?id=org.clickedu.Clickedu" target="_blank" title="Clickedu - Google Play (Android)" id="app_googleplay">
+                            <img src="https://static1.clickedu.eu/img/googleplay.png" title="Clickedu - Google Play (Android)" alt="Clickedu - Google Play (Android)" />
+                        </a>
+                    </div>
+                
+                    <div class="div_link_app">
+                        <a href="https://itunes.apple.com/es/app/clickedu/id691984809?mt=8" target="_blank" title="Clickedu - App Store (iOS)" id="app_appstore">
+                            <img src="https://static1.clickedu.eu/img/appstore.png" title="Clickedu - App Store (iOS)" alt="Clickedu - App Store (iOS)" />
+                        </a>
+                    </div>
+                <div class="trenca_float"><!-- --></div></div>
+			<div class="trenca_float"><a href="http://www.clickedu.eu/" target="_blank"><img src="https://fretacalella.clickedu.eu/img/logo_clickedu_login.png" alt="El software Clickedu és una plataforma escolar CLOUD que inclou la gestió acadèmica i econòmica, un LMS o entorn virtual d'aprenentatge - amb connexió a llibres digitals - la gestió del professorat, tutors i caps d'estudis; la qualitat del centre i un entorn privat i segur de comunicació amb les famílies" title="El software Clickedu és una plataforma escolar CLOUD que inclou la gestió acadèmica i econòmica, un LMS o entorn virtual d'aprenentatge - amb connexió a llibres digitals - la gestió del professorat, tutors i caps d'estudis; la qualitat del centre i un entorn privat i segur de comunicació amb les famílies" id="logotip_peu" /></a></a></div>
+			<div>Copyright &copy; 2018 Clickart, taller de comunicació SL, sobre l'arquitectura i el desenvolupament d'aquest aplicatiu. Tots els drets reservats.</div>
+            <div>L'accés a aquest aplicatiu està subjecte a les condicions que s'estableixen en el contracte d'ús. Fins i tot en el cas de tractar-se de la versió de demostració, l'usuari té el deure de fer un bon ús de l'aplicatiu, de no intentar manipular-lo en allò que no està previst en el normal desenvolupament de les feines de l'usuari i de no facilitar-ne l'accés a tercers. En el supòsit de detectar qualsevol irregularitat, l'usuari es compromet a avisar immediatament Clickart per tal que pugui solucionar-se sense perjudici per a les parts.</div>
+            <div><strong>Clickedu</strong> és un nom comercial registrat propietat de Clickart, taller de comunicació SL i està protegit pels drets d'autor. Més informació a <a href="http://www.clickedu.eu/" target="_blank">http://www.clickedu.eu/</a></div>
+		</div>
+		</div>
+</body>
+</html>

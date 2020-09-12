@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<title>TITLE</title>
+<meta charset="UTF-8">
+<style>
+.LetraFuente{font-family:"Impact";}
+.LetrAzul{color:blue;}
+.LetrSize{font-size:16pt;}
+.LetraHR{color:#ff0000;}
+.LetrItal{font-style:italic;}
+.LetrBold{font-weight:bold; }
+.LetrUnderLine{text-decoration:underline;}
+.LetrOverline{text-decoration:overline;}
+.LetrLinethrough{text-decoration:line-through;}
+</style>
+<html>
+    <head>
+<meta charset="utf-8">
+<title>Titulo Pestaña</title>
+</head>
+    <body>
+        <p class="LetraFuente">Lletra Impact</p>
+        <p class="LetrAzul">Lletra color blau</p>
+        <p class="LetrSize">Lletra de tamany 16 pxS</p>
+        <p class="LetraHR">Lletra color a partir de #ff0000</p>
+        <p class="LetrItal">Lletra italica</p>
+        <p class="LetrBold">Lletra en negreta</p>
+        <p class="LetrUnderLine">Lletra subratllada</p>
+        <p class="LetrOverline">Lletra sobreratllada</p>
+        <p class="LetrLinethrough">Lletra ratllada</p>
+    </body>
+</html>
+
+<!--
+    Un full d'estil és un document amb extensió .css que recull els format de tots els elements d'una pàguina web.
+    Un full d'estil té el següent format:
+    .clase1{
+        format:valor;
+        format:valor;
+    }
+    .clase2{
+        format:valor;
+        format:valor;
+    }
+    .nom_de_la_clase{
+        format:valor;
+        format:valor;
+    }
+
+    Per aplicar format a caràcter s'utilitza:
+    <p class="nom_de_la_clase">
+        Text al que s'aplica el format
+    </p>
+
+<style>
+    $Formats que podem utilitzar al css:
+    .font-family:"Times-New-Roman"; ( lletra )
+    .font-color:blue; ( color lletra )
+    .font-size:16pt; ( mida de la lletra)
+    .color:#fff; ( color de la lletra )
+    .font-style:italic; ( cursiva )
+    .font-weight:bold; ( negreta )
+    .text-decoration:underline; ( subratllat )
+    .text-decoration:overline; ( sobreratllat )
+    .text-decoration:line-through; ( tatxat )
+</style>
+-->
