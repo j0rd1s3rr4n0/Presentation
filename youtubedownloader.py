@@ -2,7 +2,7 @@
 from pytube import YouTube 
   
 #where to save 
-SAVE_PATH = "C:/xampp/htdocs/jordiserrano/youtube/" #to_do 
+SAVE_PATH = "ubicacion de guardado" #to_do 
   
 #link of the video to be downloaded 
 a = "https://www.youtube.com/watch?v="
